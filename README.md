@@ -51,7 +51,7 @@ Prérequis déjà installés : Python 3.13, Node, Git, uv.
    - Coller la clé après `ANTHROPIC_API_KEY=`, sans espace ni guillemets.
    - Sans clé, tout fonctionne sauf la rédaction par Claude ; l'assistant passe alors en règles locales.
 3. **Lancer.** Double-cliquer sur `lancer.bat`.
-   - Le premier lancement installe les bibliothèques et construit l'interface (2 à 5 minutes).
+   - Le premier lancement installe les bibliothèques (1 à 3 minutes).
    - Les lancements suivants prennent quelques secondes.
 
 Pour un raccourci sur le bureau : clic droit sur `lancer.bat`, puis *Envoyer vers*, puis *Bureau (créer un raccourci)*.
@@ -78,11 +78,22 @@ Pour un raccourci sur le bureau : clic droit sur `lancer.bat`, puis *Envoyer ver
   ```powershell
   uv run pytest
   ```
-  Les 14 tests doivent passer. Ils n'appellent jamais la vraie API Claude.
+  Les 15 tests doivent passer. Ils n'appellent jamais la vraie API Claude.
 
 ## Mise à jour
 
-Double-cliquer sur `mettre-a-jour.bat`, qui récupère la dernière version et reconstruit l'interface.
+Double-cliquer sur `mettre-a-jour.bat`, qui récupère la dernière version.
+
+## Version de démonstration en ligne (Vercel)
+
+Pour montrer l'app à quelqu'un sans rien lui faire installer. C'est gratuit et sans IA, donc sans frais sur la clé. Les modifications faites en ligne ne sont pas conservées.
+
+1. Sur [vercel.com/signup](https://vercel.com/signup), créer un compte avec *Continue with GitHub*.
+2. *Add New…*, puis *Project*, puis importer `Papanuch/soft-res`. Si le dépôt n'apparaît pas, cliquer *Configure GitHub App* et autoriser `soft-res`.
+3. Dans *Environment Variables*, ajouter `SOFTRES_DEMO_PASSWORD` avec le mot de passe à donner aux visiteurs. Ne pas ajouter `ANTHROPIC_API_KEY`.
+4. Cliquer *Deploy*. L'adresse obtenue (`soft-res-….vercel.app`) se partage avec le mot de passe ; le nom d'utilisateur demandé peut être n'importe quoi.
+
+Chaque nouvelle version poussée sur GitHub met la démo à jour automatiquement.
 
 ## Technique
 
@@ -96,3 +107,4 @@ Double-cliquer sur `mettre-a-jour.bat`, qui récupère la dernière version et r
 
 - `uv run soft-res --serveur` lance le moteur avec rechargement automatique.
 - `cd frontend` puis `npm run dev` lance l'interface sur http://localhost:5173.
+- Après une modification de l'interface : `npm run build` et committer `soft_res/static/`.

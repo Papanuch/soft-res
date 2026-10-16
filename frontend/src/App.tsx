@@ -145,6 +145,11 @@ export function App() {
       </aside>
 
       <div className="flex min-w-0 flex-1 flex-col">
+        {etat.data?.demo && (
+          <div className="bg-info-soft px-7 py-1.5 text-center text-xs text-info">
+            Version de démonstration : les modifications ne sont pas conservées{etat.data.ia ? '' : ' et l’assistant Claude est désactivé'}.
+          </div>
+        )}
         <header className="flex items-center gap-4 border-b border-line bg-bg/80 px-7 py-3.5 backdrop-blur">
           <div className="min-w-0 flex-1">
             <h1 className="text-lg font-bold leading-tight">{titre}</h1>

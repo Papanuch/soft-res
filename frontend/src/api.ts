@@ -76,6 +76,7 @@ export type Etat = {
   noms_reels: { disponible: boolean; deverrouille: boolean }
   dossier_donnees: string
   verrouillage_minutes: number
+  demo: boolean
 }
 
 export type Carte = {

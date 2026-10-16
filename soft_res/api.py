@@ -53,6 +53,7 @@ def etat():
         "noms_reels": {"disponible": vault.available, "deverrouille": vault.names() is not None},
         "dossier_donnees": str(st.data_dir),
         "verrouillage_minutes": st.softres_lock_minutes,
+        "demo": st.demo,
     }
 
 

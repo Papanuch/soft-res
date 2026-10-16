@@ -5,7 +5,6 @@ __pycache__/
 data/
 node_modules/
 frontend/dist/
-soft_res/static/
 .pytest_cache/
 .ruff_cache/
 dist/

@@ -182,3 +182,29 @@ def test_real_names_unlock(client, monkeypatch, tmp_path):
     assert "Me Réel Un" in names and "Étude Deux" in names
     client.post("/api/noms/verrouiller")
     assert "Me Réel Un" not in [a["nom"] for a in search(client)["avocats"]]
+
+
+def test_mot_de_passe_demo(tmp_path, monkeypatch):
+    import base64
+
+    from fastapi.testclient import TestClient
+
+    from soft_res import config, db
+    from soft_res.app import create_app
+
+    monkeypatch.setenv("SOFTRES_DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("SOFTRES_DEMO_PASSWORD", "harun")
+    config.settings.cache_clear()
+    db.reset_engine()
+    try:
+        with TestClient(create_app()) as c:
+            r = c.get("/api/etat")
+            assert r.status_code == 401 and "Basic" in r.headers["www-authenticate"]
+            bad = base64.b64encode(b"x:faux").decode()
+            assert c.get("/api/etat", headers={"Authorization": f"Basic {bad}"}).status_code == 401
+            ok = base64.b64encode(b"nimporte:harun").decode()
+            r = c.get("/api/etat", headers={"Authorization": f"Basic {ok}"})
+            assert r.status_code == 200 and r.json()["demo"] is True
+    finally:
+        config.settings.cache_clear()
+        db.reset_engine()

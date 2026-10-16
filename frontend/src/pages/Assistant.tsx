@@ -73,7 +73,9 @@ export function Assistant() {
               <p className="flex-1 text-xs text-muted">
                 {etat.data?.ia
                   ? `Claude (${etat.data.modele}) lit la demande et l’annuaire anonymisé. Les contrôles de conflit restent faits sur votre PC.`
-                  : 'IA inactive (pas de clé dans .env) : la demande est interprétée par les règles locales.'}
+                  : etat.data?.demo
+                    ? 'Démo sans IA : la demande est interprétée par les règles locales.'
+                    : 'IA inactive (pas de clé dans .env) : la demande est interprétée par les règles locales.'}
               </p>
               <button className="btn btn-primary" disabled={demande.trim().length < 5 || enCours} onClick={() => ia.mutate(demande)}>
                 <Wand2 size={16} /> {ia.isPending ? 'Analyse…' : 'Trouver le bon avocat'}

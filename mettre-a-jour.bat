@@ -1,17 +1,12 @@
 @echo off
-rem Récupère la dernière version depuis GitHub et reconstruit l'interface.
+rem Recupere la derniere version depuis GitHub.
 cd /d "%~dp0"
-chcp 65001 >nul
 git pull || goto :erreur
 uv sync || goto :erreur
-pushd frontend
-call npm ci || goto :erreur
-call npm run build || goto :erreur
-popd
 echo Soft - Res est a jour.
 pause
 exit /b 0
 :erreur
-echo Une erreur est survenue.
+echo Une erreur est survenue. Copiez le texte ci-dessus et envoyez-le a Claude.
 pause
 exit /b 1

@@ -77,7 +77,7 @@ export function Donnees() {
       </Bloc>
 
       <Bloc titre="Emplacement des données" icon={<span className="text-base">📁</span>}>
-        <p className="break-all font-mono text-xs">{e?.dossier_donnees}</p>
+        <p className="break-all font-mono text-xs">{e?.demo ? 'Serveur de démonstration (données temporaires)' : e?.dossier_donnees}</p>
         <p className="mt-2 text-xs text-muted">Version {e?.version}. Base SQLite locale, rien ne quitte ce PC sauf les requêtes à Claude.</p>
       </Bloc>
     </div>

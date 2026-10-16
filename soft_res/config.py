@@ -1,5 +1,6 @@
 """Réglages lus depuis l'environnement et le fichier .env (à la racine du projet)."""
 
+import os
 from functools import lru_cache
 from pathlib import Path
 
@@ -18,10 +19,21 @@ class Settings(BaseSettings):
     softres_data_dir: Path | None = None
     # Verrouillage automatique des noms réels après N minutes sans activité.
     softres_lock_minutes: int = 20
+    # Version de démonstration en ligne (Vercel) : mot de passe demandé à l'entrée.
+    softres_demo_password: str = ""
+
+    @property
+    def demo(self) -> bool:
+        return bool(self.softres_demo_password) or bool(os.environ.get("VERCEL"))
 
     @property
     def data_dir(self) -> Path:
-        d = self.softres_data_dir or Path(user_data_dir("SoftRes", appauthor=False))
+        if self.softres_data_dir:
+            d = self.softres_data_dir
+        elif os.environ.get("VERCEL"):
+            d = Path("/tmp/softres")  # seul dossier inscriptible sur Vercel, vidé régulièrement
+        else:
+            d = Path(user_data_dir("SoftRes", appauthor=False))
         d.mkdir(parents=True, exist_ok=True)
         return d
 
