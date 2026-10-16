@@ -1,0 +1,641 @@
+[
+ {
+  "id": 0,
+  "canton": "FR",
+  "avocat": "Sarine Lex SA (Etude Morand)",
+  "ville": "Fribourg",
+  "tarif": "250",
+  "domaine": "FSA Travail/ FSA Assurances/Bail",
+  "tel": "026 123 45 67"
+ },
+ {
+  "id": 1,
+  "canton": "FR",
+  "avocat": "L'Etude & Vallotton",
+  "ville": "Fribourg",
+  "tarif": "250",
+  "domaine": "FSA Travail / FSA Construction /Généralistes",
+  "tel": "026 234 56 78"
+ },
+ {
+  "id": 2,
+  "canton": "FR",
+  "avocat": "Axiom Juris Sàrl (Me Delacrausaz)",
+  "ville": "Givisiez",
+  "tarif": "280",
+  "domaine": "FSA Travail",
+  "tel": "026 345 67 89"
+ },
+ {
+  "id": 3,
+  "canton": "FR",
+  "avocat": "Etude Bugnon & Repond et associés",
+  "ville": "Bulle et Châtel-st-Denis",
+  "tarif": "240",
+  "domaine": "Généralistes / FSA travail",
+  "tel": "026 456 78 90"
+ },
+ {
+  "id": 4,
+  "canton": "BE",
+  "avocat": "Etude Grosjean/Baumann/Chételat",
+  "ville": "Tavannes et Tramelan",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "032 567 89 01"
+ },
+ {
+  "id": 5,
+  "canton": "BE",
+  "avocat": "Lukas Wenger",
+  "ville": "Berne",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "031 678 90 12"
+ },
+ {
+  "id": 6,
+  "canton": "BE",
+  "avocat": "Etude Voirol & Partner",
+  "ville": "Bienne",
+  "tarif": "250",
+  "domaine": "Généraliste",
+  "tel": "032 789 01 23"
+ },
+ {
+  "id": 7,
+  "canton": "GE",
+  "avocat": "Me Cédric Duvoisin",
+  "ville": "Genève",
+  "tarif": "275",
+  "domaine": "Pénal/LCR",
+  "tel": "022 890 12 34"
+ },
+ {
+  "id": 8,
+  "canton": "GE",
+  "avocat": "Me Laurent Chevrier",
+  "ville": "Genève",
+  "tarif": "300",
+  "domaine": "FSA RC / Travail / Contrats",
+  "tel": "022 901 23 45"
+ },
+ {
+  "id": 9,
+  "canton": "GE",
+  "avocat": "L'Etude & Vallotton",
+  "ville": "Genève",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "022 012 34 56"
+ },
+ {
+  "id": 10,
+  "canton": "GE",
+  "avocat": "Me Céline Dubuis",
+  "ville": "Genève",
+  "tarif": "300",
+  "domaine": "FSA Travail",
+  "tel": "022 111 22 33"
+ },
+ {
+  "id": 11,
+  "canton": "GE",
+  "avocat": "Me Anne-Laure Ferrari",
+  "ville": "Genève",
+  "tarif": "320",
+  "domaine": "Assurances et RC",
+  "tel": "022 222 33 44"
+ },
+ {
+  "id": 12,
+  "canton": "GE",
+  "avocat": "Me Julien Rochat",
+  "ville": "Genève / Lutry",
+  "tarif": "300",
+  "domaine": "LCR / Droit du travail / Bail/ Pénal",
+  "tel": "022 333 44 55"
+ },
+ {
+  "id": 13,
+  "canton": "GE",
+  "avocat": "Me Benoît Mermoud",
+  "ville": "Genève",
+  "tarif": "300",
+  "domaine": "Assurances et RC / Contrats /Immobilier",
+  "tel": "022 444 55 66"
+ },
+ {
+  "id": 14,
+  "canton": "GE",
+  "avocat": "Me Isabelle Terrier",
+  "ville": "Genève",
+  "tarif": "300",
+  "domaine": "Généraliste",
+  "tel": "022 555 66 77"
+ },
+ {
+  "id": 15,
+  "canton": "GE",
+  "avocat": "Me Sébastien Chapuis",
+  "ville": "Genève / Vaud",
+  "tarif": "300",
+  "domaine": "Bail/Construction/Généraliste",
+  "tel": "022 666 77 88"
+ },
+ {
+  "id": 16,
+  "canton": "JU",
+  "avocat": "Me Jean-Luc Gerber",
+  "ville": "Delémont",
+  "tarif": "280",
+  "domaine": "FSA Assurances et RC",
+  "tel": "032 901 23 45"
+ },
+ {
+  "id": 17,
+  "canton": "JU",
+  "avocat": "Me Marc Prêtre",
+  "ville": "Delémont",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "032 012 34 56"
+ },
+ {
+  "id": 18,
+  "canton": "JU",
+  "avocat": "Me Sylvain Monnier",
+  "ville": "Delémont",
+  "tarif": "250",
+  "domaine": "Généraliste",
+  "tel": "032 111 22 33"
+ },
+ {
+  "id": 19,
+  "canton": "JU",
+  "avocat": "Etude Rebetez",
+  "ville": "Delémont",
+  "tarif": "250",
+  "domaine": "Bail/travail/droit de la construction",
+  "tel": "032 222 33 44"
+ },
+ {
+  "id": 20,
+  "canton": "JU",
+  "avocat": "Léa Bourquin",
+  "ville": "Porrentruy",
+  "tarif": "250-300",
+  "domaine": "Travail/pénal/généraliste",
+  "tel": "032 333 44 55"
+ },
+ {
+  "id": 21,
+  "canton": "NE",
+  "avocat": "NLB Legal (Nicolet & Béguin)",
+  "ville": "Neuchâtel",
+  "tarif": "220-270",
+  "domaine": "Travail (FSA) /Bail (FSA) /Pénal",
+  "tel": "032 123 45 67"
+ },
+ {
+  "id": 22,
+  "canton": "NE",
+  "avocat": "Me Nadia Nicolet",
+  "ville": "Neuchâtel",
+  "tarif": "220-270",
+  "domaine": "Assurances et RC (FSA)",
+  "tel": "032 234 56 78"
+ },
+ {
+  "id": 23,
+  "canton": "NE",
+  "avocat": "Etude Voirol & Partner",
+  "ville": "Neuchâtel",
+  "tarif": "250",
+  "domaine": "Généraliste",
+  "tel": "032 345 67 89"
+ },
+ {
+  "id": 24,
+  "canton": "NE",
+  "avocat": "Aline Perrenoud-Steiner",
+  "ville": "Neuchâtel",
+  "tarif": "260",
+  "domaine": "Droit de construction + généraliste",
+  "tel": "032 456 78 90"
+ },
+ {
+  "id": 25,
+  "canton": "NE",
+  "avocat": "L'Etude & Vallotton",
+  "ville": "Neuchâtel",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "032 567 89 01"
+ },
+ {
+  "id": 26,
+  "canton": "NE",
+  "avocat": "Me Olivier Jeanmaire",
+  "ville": "Neuchâtel / Chaux-de-Fond",
+  "tarif": "265",
+  "domaine": "FSA droit du travail",
+  "tel": "032 678 90 12"
+ },
+ {
+  "id": 27,
+  "canton": "NE",
+  "avocat": "Juridis - Me Camille Robert",
+  "ville": "Neuchâtel / Chaux-de-Fond",
+  "tarif": "280",
+  "domaine": "FSA droit des assurances et RC / bail",
+  "tel": "032 789 01 23"
+ },
+ {
+  "id": 28,
+  "canton": "NE",
+  "avocat": "Me David Matthey",
+  "ville": "Neuchâtel",
+  "tarif": "230",
+  "domaine": "Généralistes",
+  "tel": "032 890 12 34"
+ },
+ {
+  "id": 29,
+  "canton": "VD",
+  "avocat": "Me Jean-Philippe Blanc",
+  "ville": "Lausanne",
+  "tarif": "280",
+  "domaine": "Construction",
+  "tel": "021 123 45 67"
+ },
+ {
+  "id": 30,
+  "canton": "VD",
+  "avocat": "Etude Muller Bovet",
+  "ville": "Lausanne",
+  "tarif": "220-280",
+  "domaine": "Travail (FSA) /PI/Contrats",
+  "tel": "021 234 56 78"
+ },
+ {
+  "id": 31,
+  "canton": "VD",
+  "avocat": "Me Marc-Olivier Pittet",
+  "ville": "Lausanne",
+  "tarif": "270",
+  "domaine": "FSA Assurances et RC",
+  "tel": "021 345 67 89"
+ },
+ {
+  "id": 32,
+  "canton": "VD",
+  "avocat": "VRC & Partners (Etude Vallotton)",
+  "ville": "Lausanne",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "021 456 78 90"
+ },
+ {
+  "id": 33,
+  "canton": "VD",
+  "avocat": "Me Alexandre Dubuis",
+  "ville": "Lausanne",
+  "tarif": "350",
+  "domaine": "FSA Travail",
+  "tel": "021 567 89 01"
+ },
+ {
+  "id": 34,
+  "canton": "VD",
+  "avocat": "M. Fabrice Ruchat (Ag. d'affaire)",
+  "ville": "Renens",
+  "tarif": "200",
+  "domaine": "Agent d'affaires",
+  "tel": "021 678 90 12"
+ },
+ {
+  "id": 35,
+  "canton": "VD",
+  "avocat": "M. Stéphane Cornaz (Ag. d'affaire)",
+  "ville": "Yverdon",
+  "tarif": "180",
+  "domaine": "Agent d'affaires",
+  "tel": "021 789 01 23"
+ },
+ {
+  "id": 36,
+  "canton": "VD",
+  "avocat": "Me Jean-Daniel Rey",
+  "ville": "Lausanne",
+  "tarif": "280",
+  "domaine": "FSA Construction / Travail",
+  "tel": "021 890 12 34"
+ },
+ {
+  "id": 37,
+  "canton": "VD",
+  "avocat": "Me Thomas Gaillard",
+  "ville": "Lausanne",
+  "tarif": "280",
+  "domaine": "Généraliste / Travail / Bail / Pénal",
+  "tel": "021 901 23 45"
+ },
+ {
+  "id": 38,
+  "canton": "VD",
+  "avocat": "Meridian Avocats (Pierre Bornand)",
+  "ville": "Lausanne",
+  "tarif": "250",
+  "domaine": "FSA Travail",
+  "tel": "021 012 34 56"
+ },
+ {
+  "id": 39,
+  "canton": "VD",
+  "avocat": "Me Nicolas Vuille",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Assurances et RC",
+  "tel": "021 111 22 33"
+ },
+ {
+  "id": 40,
+  "canton": "VD",
+  "avocat": "Me François Regamey",
+  "ville": "Lausanne",
+  "tarif": "285",
+  "domaine": "FSA Assurances et RC",
+  "tel": "021 222 33 44"
+ },
+ {
+  "id": 41,
+  "canton": "VD",
+  "avocat": "Christophe Zufferey",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Assurances et RC",
+  "tel": "021 333 44 55"
+ },
+ {
+  "id": 42,
+  "canton": "VD",
+  "avocat": "Me Katia Novak",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Assurances et RC",
+  "tel": "021 444 55 66"
+ },
+ {
+  "id": 43,
+  "canton": "VD",
+  "avocat": "Me Sophie Bezençon",
+  "ville": "Lausanne",
+  "tarif": "280",
+  "domaine": "Contrat / droit fiscal",
+  "tel": "021 555 66 77"
+ },
+ {
+  "id": 44,
+  "canton": "VD",
+  "avocat": "Me Martine Rossier",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Droit du travail",
+  "tel": "021 666 77 88"
+ },
+ {
+  "id": 45,
+  "canton": "VD",
+  "avocat": "Me Sandrine Bovay",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Bail",
+  "tel": "021 777 88 99"
+ },
+ {
+  "id": 46,
+  "canton": "VD",
+  "avocat": "Me Émilie Duruz-Weber",
+  "ville": "Cully",
+  "tarif": "320",
+  "domaine": "FSA Droit du travail / LCR",
+  "tel": "021 888 99 00"
+ },
+ {
+  "id": 47,
+  "canton": "VD",
+  "avocat": "Me Julien Rochat",
+  "ville": "Lutry",
+  "tarif": "300",
+  "domaine": "LCR / Droit du travail / Bail/ Pénal",
+  "tel": "021 999 00 11"
+ },
+ {
+  "id": 48,
+  "canton": "VD",
+  "avocat": "Me Pierre-Yves Nicollier",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Construction",
+  "tel": "021 000 11 22"
+ },
+ {
+  "id": 49,
+  "canton": "VD",
+  "avocat": "Me Marion Bosshard",
+  "ville": "Payerne",
+  "tarif": "270",
+  "domaine": "Généraliste/ construction / bail / travail",
+  "tel": "021 111 22 33"
+ },
+ {
+  "id": 50,
+  "canton": "VD",
+  "avocat": "Me Luca Marchetti",
+  "ville": "Lausanne",
+  "tarif": "250",
+  "domaine": "Généraliste / Travail / Bail / Pénal",
+  "tel": "021 222 33 44"
+ },
+ {
+  "id": 51,
+  "canton": "VD",
+  "avocat": "Me Damien Ducret",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Travail / Contrat / Protection des données",
+  "tel": "021 333 44 55"
+ },
+ {
+  "id": 52,
+  "canton": "VD",
+  "avocat": "Me Raphaël Crausaz",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA Construction",
+  "tel": "021 444 55 66"
+ },
+ {
+  "id": 53,
+  "canton": "VD",
+  "avocat": "Mme Elena Petrova (Ag. d'affaires)",
+  "ville": "Morges",
+  "tarif": "200",
+  "domaine": "Droit du bail",
+  "tel": "021 555 66 77"
+ },
+ {
+  "id": 54,
+  "canton": "VD",
+  "avocat": "Me Antoine Sanchez",
+  "ville": "Yverdon",
+  "tarif": "300",
+  "domaine": "Contrats /assurances sociales / travail",
+  "tel": "021 666 77 88"
+ },
+ {
+  "id": 55,
+  "canton": "VD",
+  "avocat": "Axelis (Clara Fernandez. Sam Karim)",
+  "ville": "Lausanne",
+  "tarif": "280",
+  "domaine": "LCR/ assurances privées et sociales",
+  "tel": "021 777 88 99"
+ },
+ {
+  "id": 56,
+  "canton": "VD",
+  "avocat": "Me Hugo Chevalley",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "Construction / Immobilier / Contrat",
+  "tel": "021 888 99 00"
+ },
+ {
+  "id": 57,
+  "canton": "VD",
+  "avocat": "Me Nathalie Grandjean",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "Bail/Travail/Protection des données",
+  "tel": "021 999 00 11"
+ },
+ {
+  "id": 58,
+  "canton": "VD",
+  "avocat": "Vincent Cuendet",
+  "ville": "Nyon",
+  "tarif": "300",
+  "domaine": "FSA droit de la Construction et immobilier",
+  "tel": "021 000 11 22"
+ },
+ {
+  "id": 59,
+  "canton": "VD",
+  "avocat": "Yasmine Costa Ribeiro",
+  "ville": "Lausanne",
+  "tarif": "280",
+  "domaine": "Bail / généraliste",
+  "tel": "021 111 22 33"
+ },
+ {
+  "id": 60,
+  "canton": "VD",
+  "avocat": "Loïc Mottaz",
+  "ville": "Vevey",
+  "tarif": "300",
+  "domaine": "Généraliste",
+  "tel": "021 222 33 44"
+ },
+ {
+  "id": 61,
+  "canton": "VD",
+  "avocat": "Mathieu Bertholet",
+  "ville": "Lausanne",
+  "tarif": "280",
+  "domaine": "Généraliste",
+  "tel": "021 333 44 55"
+ },
+ {
+  "id": 62,
+  "canton": "VD",
+  "avocat": "Adrien Chollet",
+  "ville": "Vevey",
+  "tarif": "250",
+  "domaine": "Généraliste",
+  "tel": "021 444 55 66"
+ },
+ {
+  "id": 63,
+  "canton": "VD",
+  "avocat": "Me Guillaume Hofer",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "Généraliste",
+  "tel": "021 555 66 77"
+ },
+ {
+  "id": 64,
+  "canton": "VD",
+  "avocat": "Me Patrick Jaquier",
+  "ville": "Lausanne",
+  "tarif": "300",
+  "domaine": "FSA bail + FSA construction",
+  "tel": "021 666 77 88"
+ },
+ {
+  "id": 65,
+  "canton": "VS",
+  "avocat": "Etude de la Planta (Me Fournier et coll.)",
+  "ville": "Sion",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "027 678 90 12"
+ },
+ {
+  "id": 66,
+  "canton": "VS",
+  "avocat": "VRC & Partners (Etude Vallotton)",
+  "ville": "Monthey",
+  "tarif": "250",
+  "domaine": "Généralistes",
+  "tel": "024 789 01 23"
+ },
+ {
+  "id": 67,
+  "canton": "VS",
+  "avocat": "Christophe Zufferey",
+  "ville": "Sion",
+  "tarif": "300",
+  "domaine": "FSA Assurances et RC",
+  "tel": "027 789 01 23"
+ },
+ {
+  "id": 68,
+  "canton": "VS",
+  "avocat": "Chloé Rappaz",
+  "ville": "Monthey",
+  "tarif": "250",
+  "domaine": "Droit immobilier, et généraliste",
+  "tel": "024 890 12 34"
+ },
+ {
+  "id": 69,
+  "canton": "VS",
+  "avocat": "Frédéric Darbellay",
+  "ville": "Martigny",
+  "tarif": "250-300",
+  "domaine": "assurances sociales et privées, RC",
+  "tel": "027 890 12 34"
+ },
+ {
+  "id": 70,
+  "canton": "VS",
+  "avocat": "Kevin Morisod",
+  "ville": "Martigny",
+  "tarif": "250-300",
+  "domaine": "FSA droit de la construction et immobilier",
+  "tel": "027 901 23 45"
+ }
+]

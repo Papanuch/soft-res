@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* Jetons de couleur : clair par défaut, sombre selon le système ou le choix de l'utilisateur.
+   Les classes Tailwind (bg-surface, text-muted…) lisent ces variables : aucun « dark: » à écrire. */
+:root {
+  color-scheme: light;
+  --bg: #f4f2ee;
+  --surface: #ffffff;
+  --surface-2: #f9f8f5;
+  --surface-3: #efece6;
+  --ink: #1b1a1d;
+  --ink-2: #47454c;
+  --muted: #77747d;
+  --line: #e4e0d8;
+  --brand: #c41e3a;
+  --brand-strong: #a3162f;
+  --brand-soft: #fbecef;
+  --brand-ink: #ffffff;
+  --ok: #17804b;
+  --ok-soft: #e6f4ec;
+  --warn: #a15c07;
+  --warn-soft: #fff3dc;
+  --info: #2c5da8;
+  --info-soft: #e8effa;
+  --side: #151418;
+  --side-ink: #ecebef;
+  --side-muted: #8e8c96;
+  --map-land: #e8e5de;
+  --map-lake: #cfe1f2;
+  --map-stroke: #ffffff;
+  --shadow: 0 1px 2px rgb(20 18 24 / 0.05), 0 4px 16px rgb(20 18 24 / 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0f0f12;
+    --surface: #18181c;
+    --surface-2: #1d1d22;
+    --surface-3: #26262c;
+    --ink: #f0eff3;
+    --ink-2: #c9c7cf;
+    --muted: #8f8d97;
+    --line: #2c2c33;
+    --brand: #e5485f;
+    --brand-strong: #f0687c;
+    --brand-soft: #3a1820;
+    --ok: #4cc488;
+    --ok-soft: #15301f;
+    --warn: #f0a845;
+    --warn-soft: #36270f;
+    --info: #79a6ec;
+    --info-soft: #18263b;
+    --side: #0a0a0c;
+    --map-land: #24242a;
+    --map-lake: #1d3045;
+    --map-stroke: #0f0f12;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 6px 20px rgb(0 0 0 / 0.35);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f0f12;
+  --surface: #18181c;
+  --surface-2: #1d1d22;
+  --surface-3: #26262c;
+  --ink: #f0eff3;
+  --ink-2: #c9c7cf;
+  --muted: #8f8d97;
+  --line: #2c2c33;
+  --brand: #e5485f;
+  --brand-strong: #f0687c;
+  --brand-soft: #3a1820;
+  --ok: #4cc488;
+  --ok-soft: #15301f;
+  --warn: #f0a845;
+  --warn-soft: #36270f;
+  --info: #79a6ec;
+  --info-soft: #18263b;
+  --side: #0a0a0c;
+  --map-land: #24242a;
+  --map-lake: #1d3045;
+  --map-stroke: #0f0f12;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 6px 20px rgb(0 0 0 / 0.35);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-ink: var(--brand-ink);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-side: var(--side);
+  --color-side-ink: var(--side-ink);
+  --color-side-muted: var(--side-muted);
+  --shadow-card: var(--shadow);
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: var(--brand-soft);
+}
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+/* Composants récurrents */
+@layer components {
+  .card {
+    @apply rounded-2xl border border-line bg-surface shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-line bg-surface px-3.5 py-2 text-sm font-semibold text-ink transition hover:bg-surface-3 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply border-transparent bg-brand text-brand-ink hover:bg-brand-strong;
+  }
+  .btn-ghost {
+    @apply border-transparent bg-transparent hover:bg-surface-3;
+  }
+  .btn-sm {
+    @apply rounded-lg px-2.5 py-1.5 text-xs;
+  }
+  .input {
+    @apply w-full rounded-xl border border-line bg-surface px-3 py-2 text-sm text-ink placeholder:text-muted focus:border-brand focus:outline-none;
+  }
+  .label {
+    @apply mb-1 block text-xs font-semibold text-ink-2;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-line bg-surface px-2.5 py-1 text-xs font-semibold text-ink-2 transition hover:border-brand;
+  }
+  .chip-on {
+    @apply border-brand bg-brand-soft text-brand;
+  }
+  .tag {
+    @apply inline-flex items-center gap-1 rounded-md bg-surface-3 px-1.5 py-0.5 text-[11px] font-semibold text-ink-2;
+  }
+  .eyebrow {
+    @apply text-[11px] font-bold uppercase tracking-[0.14em] text-muted;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-zone,
+  .print-zone * {
+    visibility: visible;
+  }
+  .print-zone {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    font-size: 12pt;
+    color: #000;
+  }
+}
